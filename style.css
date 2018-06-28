@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wallpaper{
+    background: url(Forest.png) 0 0 repeat-x;
+    background-size: 1920px 100vh;
+    width: 100vw;
+    height: 100vh;
+
+    animation: forest 10s linear infinite;
+
+    overflow: hidden;
+
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes forest{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -1920px 0;
+    }
+}
+
+/* .meadow {
+    background: url(grass.png) 0 0 repeat-x;
+    background-size: 1140px 197px;
+    width: 100vw;
+    height: 197px;
+   
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    animation: meadow 10s linear infinite;
+}
+
+@keyframes meadow{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -1140px 0;
+    }
+} */
+
+.meadow {
+    background: url(meadow.png) 0 0 repeat-x;
+    background-size: 1800px 497px;
+    width: 100vw;
+    height: 497px;
+   
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    animation: meadow 10s linear infinite;
+}
+
+@keyframes meadow{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -1800px 0;
+    }
+}
+
+.barbarian{
+    position: absolute;
+    top:190px;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+
+    width:  600px;
+    height: 400px;
+
+    overflow: hidden;
+
+    background: url(sprite.png) 0 0 no-repeat;
+    background-size: 1801px 2403px;
+
+    z-index: 2;
+
+    animation: walk 1.5s steps(6) 0.25s infinite;
+}
+
+@keyframes walk{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position:  0 -2403px;
+    }
+}
